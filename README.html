@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>p4da capstone api Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="col">
+        <h1 class="text-center ml-3 mr-3 mt-3">Api Documentation</h1>
+        <div class="card ml-3 mr-3 mt-3">
+          <div class="card-header">
+            Get all Book Data
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{data.url|safe}}/getallbook</h5>
+            <p class="card-text">This api return all complete book data.</p>
+          </div>
+        </div>
+        <div class="card ml-3 mr-3 mt-3">
+          <div class="card-header">
+            Get all Author Data
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{data.url|safe}}/getallauthor</h5>
+            <p class="card-text">This api return all names of book author.</p>
+          </div>
+        </div>
+        <div class="card ml-3 mr-3 mt-3">
+          <div class="card-header">
+            Get Book Count of an Actor
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{data.url|safe}}/getauthorbookcount/&lt;author&gt;</h5>
+            <p class="card-text">This api return the number of books an author has written.
+              (Example of use: {{data.url|safe}}/getauthorbookcount/J.K. Rowling)</p>
+          </div>
+        </div>
+        <div class="card ml-3 mr-3 mt-3">
+          <div class="card-header">
+            Get Books with Minimum Rating
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{data.url|safe}}/getbookminrating/&lt;rating&gt;</h5>
+            <p class="card-text">This api return the title of books with specified minimum rating.
+              (Example of use: {{data.url|safe}}/getbookminrating/4.5)</p>
+          </div>
+        </div>
+        <div class="card ml-3 mr-3 mt-3 mb-3">
+          <div class="card-header">
+            Get Author Books Mean Average Rating
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{data.url|safe}}/getaveragebookauthors</h5>
+            <p class="card-text">This api return authors with mean of average book ratings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
